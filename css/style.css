@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    padding: 4vh 2vh;
+    background-color: lightseagreen;
+    margin-bottom: 2vh;
+    border: 1px solid green;
+    color: black;
+}
+.caption{
+    margin: 2vh 0;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+    box-shadow: 5px 5px 15px 10px #660000;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#cornerBtn{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: blue;
+    color: gold;
+    font-size: 110%;
+    font-weight: bold;
+    transition: all 300ms;
+}
+#cornerBtn:hover{
+    background-color: yellow;
+    color: maroon;
+    padding: 15px;
+}
+body{
+    font-family: 'Cinzel Decorative', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    background-image: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00)
+    
+};
+
+header, footer{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 3vh;
+    width: 100%;
+}
+
+
+header h2{
+    font-size: 250%;
+}
+
+header img{
+    margin: 2vh;
+    max-width: 200px;
+
+}
+
+nav{
+    flex: 0 1 300px;
+}
+nav ul{
+    list-style-type: none;
+    position: sticky;
+    top: 100px;
+}
+nav li{
+    width: 80%;
+    border: 1px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+nav a{
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 2vh;
+    display: block;
+    background-color: aqua;
+    color: gold;
+    border-radius: 5px;
+}
+nav a:link, nav a:visited{
+    color: #00e474;
+}
+nav li a:hover{
+    cursor: pointer;
+    color: gold;
+    text-decoration: underline;
+    background-color: #1f005c;
+    color: darkblue;
+}
+
+main{
+   flex: 0 1 600px;
+}
+footer{
+    padding: 3vh 0;
+    width: 100%;
+}
+footer p{
+    font-size: 80%;
+    text-align: center;
+    font-variant: small-caps;
+    color: white;
+}
